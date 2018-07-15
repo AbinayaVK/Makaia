@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestTaps" >
+<listeners>
+<listener class-name="lib.listeners.TestngListener"></listener>
+</listeners>
+
+
+
+<parameter name="url" value="http://leaftaps.com/opentaps/control/main"></parameter>
+<parameter name="uName" value="DemoSalesManager"></parameter>
+<parameter name="password" value="crmsfa"></parameter>
+  <test name="Leads" >
+ 
+    <classes>
+     <!--  <class name="lib.selenium.EditLead"/> -->
+      <class name="lib.selenium.CreateLead"/>
+       <class name="lib.selenium.DeleteLead"/>
+      <!-- <class name="lib.selenium.MergeLead"/>-->
+      
+    </classes>
+  </test> <!-- Leads -->
+  
+</suite> <!-- TestTaps -->

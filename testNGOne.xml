@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestTaps" >
+
+  <groups>
+<run>
+<include name="smoke"></include>
+<include name="sanity"></include>
+
+</run>
+</groups>
+
+  <test name="Leads" >
+  
+
+
+    <classes>
+      <class name="lib.selenium.EditLead"/>
+      <class name="lib.selenium.CreateLead"/>
+      <class name="lib.selenium.DeleteLead"/>
+      <class name="lib.selenium.MergeLead"/>
+      
+    </classes>
+  </test> <!-- Leads -->
+  
+</suite> <!-- TestTaps -->
